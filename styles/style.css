@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    font-family: "Roboto", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000;
+    padding-top: 50px;
+}
+
+.inner {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs {
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #5D5D5D;
+}
+
+.tabs__item {
+    position: relative;
+}
+
+.tabs__item::before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: #0179FF;
+}
+
+.tabs__item input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tabs__item span {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px 35px 16px;
+    background: #F5F5F5;
+    color: #000;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.tabs__item i {
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    background: url("../images/arrow.svg") no-repeat;
+    width: 10px;
+    height: 6px;
+    transform: rotate(-90deg);
+    transition: .4s;
+}
+
+.tabs__item input:checked ~ i {
+    transform: rotate(0);
+}
+
+.tabs__item div {
+    display: none;
+    padding: 20px;
+}
+
+.tabs__item input:checked + div {
+    display: block;
+}
+
+.tabs__item p {
+    margin-top: 10px;
+}
+
+.tabs__item h3 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.tabs__item img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 30px auto 0;
+}
