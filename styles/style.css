@@ -87,7 +87,7 @@ ul, ol {
 
 .tabs__item div {
     display: none;
-    padding: 20px 40px 20px 20px;
+    padding: 20px;
 }
 
 .tabs__item input:checked + div {
@@ -107,6 +107,7 @@ ul, ol {
 
 .tabs__item img {
     display: block;
-    width: 90%;
+    max-width: 300px;
+    width: 100%;
     margin: 30px auto 0;
 }
